@@ -87,7 +87,7 @@ create table products(
 
     status varchar(10) check ( status = 'valid' or status = 'expired' ),
 
-    created_at datetime DEFAULT CURRENT_TIME
+    created_at datetime DEFAULT CURRENT_TIMESTAMP
 );
 
 insert into products values (1, 'laptop', 3000, 'valid', now());
